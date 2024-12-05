@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedidos</title>
+    <style>
+         body {
+          background: url(https://static.vecteezy.com/system/resources/previews/003/476/771/large_2x/pharmacy-background-medicine-objects-pills-on-wooden-table-top-view-template-for-web-banner-of-pharmacy-sale-or-advertising-vector.jpg)
+        }
+    
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form id="formularioparapedidos" method="get" action="Inicio.html"> 
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Digite su Nombre" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Digite su Apellido" required>
+        </div>
+        <div>
+            <label for="correo">Correo</label>
+            <input type="text" id="correo" name="correo" placeholder="Digite su Correo" required>
+        </div>
+        <div>
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Digite su Dirección" required>
+        </div>
+        <div>
+            <label for="telefono">Celular/Teléfono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Digite su Celular/Teléfono" required>
+        </div>
+        <div>
+            <input type="submit" value="INGRESAR">
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

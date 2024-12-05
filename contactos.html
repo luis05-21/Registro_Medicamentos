@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="css/contactos.css">
+    <style>
+       img{width: 150px ;}
+        table{margin: auto;}
+        a{color:rgb(16, 77, 242);font-size: large;text-decoration: none;}
+        a:hover{font-size: 1.5em;background-color: rgb(13, 13, 13); color: white; padding: 10px; border-radius: .5em;}
+        body {  
+          background: url(https://static.vecteezy.com/system/resources/previews/003/476/771/large_2x/pharmacy-background-medicine-objects-pills-on-wooden-table-top-view-template-for-web-banner-of-pharmacy-sale-or-advertising-vector.jpg)
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>   
+        <li><a class="nav-link" href="contactos.html">Contacto</a></li>
+        <li><a class="nav-link" href="productos.html">Productos</a></li>
+        <li><a class="nav-link" href="carrito.html">Carrito</a></li>
+     
+    </ul>
+    <header>
+      <h1>Contacto</h1>
+  </header>
+    <div class="container">
+        <h2>Ponte en contacto con nosotros</h2>
+
+        <div class="info">
+            <h3>Información de contacto</h3>
+            <div>
+                📧 <strong>Email:</strong> <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+            </div>
+            <div>
+                📞 <strong>Teléfono:</strong> <a href="tel:+123456789">+123 456 789</a>
+            </div>
+            <div>
+                📍 <strong>Dirección:</strong> Calle Principal 123, Ciudad, País
+            </div>
+        </div>
+
+        <div class="formulario">
+            <h3>Envíanos un mensaje</h3>
+            <form action="procesar-formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+       
+</body>
+</html>
